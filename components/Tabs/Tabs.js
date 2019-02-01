@@ -1,13 +1,13 @@
 class TabLink {
   constructor(tabElement){
 
-    this.tabElement = element;
-    this.tabData = this.element.dataset.tab;
+    this.tabElement = tabElement;
+    this.tabData = this.tabElement.dataset.tab;
   
     if(this.tabData === 'all'){
       this.cards = document.querySelectorAll('.card');
     } else {
-      this.cards = document.querySelectorAll(`.card[data-tab="${data}"]`);
+      this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
     }
 
     this.cards = Array.from(this.cards).map(card => new TabCard(card));
@@ -20,7 +20,7 @@ class TabLink {
 
     tabs.forEach(tab => tab.classList.remove('active-tab'));
 
-    const tabs = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => card.style.display = 'none');
 
