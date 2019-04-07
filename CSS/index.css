@@ -42,7 +42,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f1f1f1;
-  color: #333;
+  color: #000;
   font-family: 'PT Sans', sans-serif;
 }
 .top-bar {
@@ -53,7 +53,7 @@ body {
   flex-direction: row;
   position: fixed;
   height: 44px;
-  background-color: #333;
+  background-color: #c21313;
 }
 .top-bar .container {
   width: 100%;
@@ -137,6 +137,7 @@ body {
   flex: 8;
   text-align: center;
   color: #000;
+  cursor: pointer;
 }
 .header span {
   align-self: flex-end;
@@ -185,21 +186,23 @@ body {
   align-items: center;
   flex-direction: row;
   color: #fff;
-  background-color: #333;
+  background-color: #c21313;
   margin: 0 5px;
   padding: 2px 10px;
+  border-radius: 5px;
   font-size: 12px;
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: bold;
-}
-.tabs .topics .tab:hover {
-  text-decoration: underline;
+  /* &:hover {
+        text-decoration: underline;
+      } */
 }
 .tabs .topics .active-tab {
   background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
+  color: #c21313;
+  border: 2px solid #c21313;
+  border-radius: 5px;
 }
 .cards-container {
   display: flex;
@@ -222,9 +225,11 @@ body {
   align-items: none;
   flex-direction: column;
   background-color: #fff;
+  border-radius: 6px;
   width: 380px;
   margin-bottom: 16px;
   padding: 24px;
+  cursor: pointer;
 }
 .cards-container .card .headline {
   font-size: 25px;
@@ -274,7 +279,7 @@ body {
   align-items: none;
   flex-direction: row;
   color: #fff;
-  background-color: #333;
+  background-color: #c21313;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -284,9 +289,9 @@ body {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: #333;
+  color: #c21313;
   background-color: #fff;
-  border: 2px solid #333;
+  border: 2px solid #c21313;
 }
 .carousel .left-button {
   top: 50%;
